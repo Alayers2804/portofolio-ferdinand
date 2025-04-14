@@ -1,7 +1,8 @@
+import ProjectCarousel from "./ProjectCarousel";
 
-export default function listProject() {
+export default function ListProject() {
     return (
-        <><section className="flex flex-col md:flex-row justify-between items-center px-10 py-20">
+        <section className="flex flex-col md:flex-row justify-between items-center px-10 py-20">
             <div className="max-w-md mb-10 md:mb-0">
                 <h1 className="text-4xl md:text-5xl font-bold leading-tight">
                     Experienced<br />Web & Mobile<br />Developer
@@ -11,10 +12,8 @@ export default function listProject() {
                 </button>
             </div>
             <div className="w-full md:w-1/2">
-                {/* <Image src="/path/to/your/image.jpg" alt="Development Image" width={600} height={400} /> */}
+                <ProjectCarousel />
             </div>
-        </section></>
+        </section>
     );
 }
-
-

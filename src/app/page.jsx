@@ -21,12 +21,16 @@ export default function Home() {
         <h2 className="text-3xl md:text-4xl font-bold mb-10">
           Professional Development Journey
         </h2>
-        <div className="flex justify-center gap-10 text-2xl">
-          <span>🚀 Google</span>
-          <span>👽 Microsoft</span>
-          <span>☁️ Amazon</span>
-          <span>🔋 Tesla</span>
+        <div className="flex justify-center mb-10">
+          <Image
+            src="http://ghchart.rshah.org/alayers2804"
+            alt="Alayers2804 Github chart"
+            width={1024}
+            height={768}
+            unoptimized={true}
+          />
         </div>
+
       </section>
 
 

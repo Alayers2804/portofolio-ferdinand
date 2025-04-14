@@ -1,23 +1,27 @@
-// components/Footer.js
-
+"use client";
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
     return (
-
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
 
+            {/* Logo Section - Bigger and Clearer */}
             <div className="flex flex-col items-center md:items-start mb-10 md:mb-0">
-                <div className="bg-gray-700 p-3 rounded-full">
-                    <span className="text-white text-xl font-bold">*</span>
-                </div>
+                <Image
+                    src="/logo_small.png"
+                    alt="Alayers Logo"
+                    width={128}  // Increased size
+                    height={128}
+                    className="w-32 h-32 object-contain"
+                />
                 <p className="mt-3 text-center md:text-left">
                     © 2024 Alayers, made with NextJS.<br />
                     All rights reserved.
                 </p>
             </div>
 
-            {/* Middle Section: Links */}
+            {/* Navigation Links */}
             <div className="flex flex-col md:flex-row gap-10 text-center md:text-left">
                 <div>
                     <h3 className="text-gray-300 font-medium mb-3">Explore</h3>
@@ -48,6 +52,5 @@ export default function Footer() {
                 </div>
             </div>
         </div>
-
     );
 }
