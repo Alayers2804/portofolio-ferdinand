@@ -16,7 +16,7 @@ export default function Footer() {
                     className="w-32 h-32 object-contain"
                 />
                 <p className="mt-3 text-center md:text-left">
-                    © 2024 Alayers, made with NextJS.<br />
+                    ©{new Date().getFullYear()} made with NextJS.<br />
                     All rights reserved.
                 </p>
             </div>
